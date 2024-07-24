@@ -18,7 +18,7 @@ class App extends Component {
     resturentMenuDetails: {},
   }
 
-  // calling after initial render to make API CALL
+  // calling after initial render to make a API CALL
   componentDidMount() {
     this.getMenudetails()
   }

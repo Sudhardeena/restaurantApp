@@ -48,10 +48,10 @@
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  .my-orders-text{
+  .my-orders-text {
     display: none;
   }
-  .cart-icon{
+  .cart-icon {
     margin-right: 10px;
   }
 }
