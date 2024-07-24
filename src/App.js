@@ -11,7 +11,7 @@ import './App.css'
 
 // Top level component in tree
 class App extends Component {
-  // keeping initial data in state object is going to change in future
+  // keeping initial data in state object is going to change in the future
   state = {
     isLoading: true,
     activeTab: 'Salads and Soup',
