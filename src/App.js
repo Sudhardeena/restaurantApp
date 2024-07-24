@@ -37,7 +37,7 @@ class App extends Component {
     const response = await fetch(url)
     const menudetatils = await response.json()
     const menudetatil = menudetatils[0]
-    console.log(menudetatil)
+    // console.log(menudetatil)
     const modifiedData = {
       restaurantName: menudetatil.restaurant_name,
       restaurantId: menudetatil.restaurant_id,
@@ -59,7 +59,7 @@ class App extends Component {
         menuCategoryId: each.menu_category_id,
       })),
     }
-    console.log(modifiedData)
+    // console.log(modifiedData)
     this.setState({resturentMenuDetails: modifiedData, isLoading: false})
   }
 
