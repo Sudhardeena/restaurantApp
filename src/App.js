@@ -14,7 +14,7 @@ class App extends Component {
   // keeping initial data in state object is going to change in the future
   state = {
     isLoading: true,
-    activeTab: 'Salads and Soup',
+    activeTab: 'From The Barnyard',
     resturentMenuDetails: {},
   }
 
