@@ -3,7 +3,7 @@ import './index.css'
 
 const MenuList = props => {
   const {menulist} = props
-  console.log(menulist)
+  // console.log(menulist)
 
   return (
     <ul className="menu-list">
