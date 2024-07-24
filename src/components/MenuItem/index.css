@@ -6,6 +6,7 @@
   border-width: 0 0 1px 0;
   border-style: solid;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 5px 0;
   padding: 10px;
@@ -77,9 +78,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .menu-item{
-    justify-content: space-between;
-  }
   .menu-info-div {
     max-width: 50%;
   }
