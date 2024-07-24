@@ -77,6 +77,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .menu-item{
+    justify-content: space-between;
+  }
   .menu-info-div {
     max-width: 50%;
   }
