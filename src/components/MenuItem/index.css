@@ -1,0 +1,109 @@
+.menu-item {
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0;
+  border-color: #eeeeee;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+}
+.menu-info-div {
+  display: flex;
+  width: 700px;
+}
+
+.dish-type-img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.menu-info {
+  flex-grow: 1;
+}
+.dish-name {
+  margin: 0;
+  font-size: 20px;
+}
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #373a40;
+  margin-top: 0;
+  margin: 10px 0;
+}
+.dish-desc {
+  font-size: 17px;
+  color: #939185;
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+.inc-desc-buttons-div {
+  background-color: #399918;
+  color: #ffffff;
+  width: 120px;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customizationAvailable-text {
+  color: #8576ff;
+  margin-top: 7px;
+}
+.not-available-text {
+  color: red;
+}
+
+.calories {
+  color: #ff8f00;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.dish-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-info-div {
+    max-width: 50%;
+  }
+
+  .dish-img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 10px;
+    align-self: flex-start;
+  }
+  .dish-name {
+    margin: 0;
+    font-size: 15px;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 13px;
+    color: #373a40;
+    margin-top: 0;
+    margin: 10px 0;
+  }
+  .dish-desc {
+    font-size: 14px;
+    color: #939185;
+    margin-bottom: 10px;
+  }
+  .calories {
+    font-size: 15px;
+  }
+}
