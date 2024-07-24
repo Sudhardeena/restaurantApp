@@ -30,7 +30,7 @@ class App extends Component {
     </div>
   )
 
-  // function to make API CALL and get Menu details
+  // function to make API CALL and get the Menu details
   getMenudetails = async () => {
     const url =
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details'
