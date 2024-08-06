@@ -1,4 +1,5 @@
 import MenuDetailsContext from '../../context/MenuDetailsContext'
+import CartContext from '../../context/CartContext'
 import './index.css'
 
 const MenuItem = props => {
@@ -43,23 +44,42 @@ const MenuItem = props => {
                 </p>
                 <p className="dish-desc">{dishDescription}</p>
                 {dishAvailability ? (
-                  <div className="inc-desc-buttons-div">
-                    <button
-                      className="btn decrease-btn"
-                      type="button"
-                      onClick={onRemove}
-                    >
-                      -
-                    </button>
-                    <span>{quantity}</span>
-                    <button
-                      className="btn increase-btn"
-                      type="button"
-                      onClick={onAdd}
-                    >
-                      +
-                    </button>
-                  </div>
+                  <>
+                    <div className="inc-desc-buttons-div">
+                      <button
+                        className="btn decrease-btn"
+                        type="button"
+                        onClick={onRemove}
+                      >
+                        -
+                      </button>
+                      <span>{quantity}</span>
+                      <button
+                        className="btn increase-btn"
+                        type="button"
+                        onClick={onAdd}
+                      >
+                        +
+                      </button>
+                    </div>
+                    {quantity > 0 && (
+                      <CartContext.Consumer>
+                        {cartValue => {
+                          const {addCartItem} = cartValue
+                          const onAddCartItem = () => addCartItem(menuDetails)
+                          return (
+                            <button
+                              type="button"
+                              className="button add-to-cart-btn"
+                              onClick={onAddCartItem}
+                            >
+                              ADD TO CART
+                            </button>
+                          )
+                        }}
+                      </CartContext.Consumer>
+                    )}
+                  </>
                 ) : (
                   <p className="not-available-text">Not available</p>
                 )}

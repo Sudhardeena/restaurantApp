@@ -1,4 +1,4 @@
-.menu-item {
+.cart-item {
   list-style: none;
   border-radius: 10px;
   box-shadow: 0 0 1px 0;
@@ -12,7 +12,7 @@
   padding: 10px;
   width: 100%;
 }
-.menu-info-div {
+.cart-info-div {
   display: flex;
   width: 700px;
 }
@@ -22,7 +22,7 @@
   width: 30px;
   height: 30px;
 }
-.menu-info {
+.cart-info {
   flex-grow: 1;
 }
 .dish-name {
@@ -96,9 +96,24 @@
   margin-top: 5px;
 }
 
+.delete-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .add-to-cart-btn {
     font-size: 14px;
+  }
+  .cart-info {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .dish-name {
+    width: 300px;
   }
 }
 
@@ -108,10 +123,11 @@
   }
 
   .dish-img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 10px;
     align-self: flex-start;
+    margin-right: 20px;
   }
   .dish-name {
     margin: 0;
@@ -123,6 +139,10 @@
     color: #373a40;
     margin-top: 0;
     margin: 10px 0;
+  }
+  .inc-desc-buttons-div {
+    padding: 3px 10px;
+    margin-top: 10px;
   }
   .dish-desc {
     font-size: 14px;

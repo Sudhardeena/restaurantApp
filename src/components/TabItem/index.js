@@ -11,7 +11,9 @@ const TabItem = props => {
       className={`tab-item ${activeTabClassName}`}
       onClick={onChangeActiveTab}
     >
-      <p>{tabDetails.menuCategory}</p>
+      <button type="button" className={`tab-button  ${activeTabClassName}`}>
+        {tabDetails.menuCategory}
+      </button>
     </li>
   )
 }
